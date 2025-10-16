@@ -1,10 +1,34 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DGS CMS</title>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  </head>
-  <body></body>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DealGuard Secure — Transaktionsversicherung (M&A)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" data-content-source="content/site.json">
+    <video id="bgVideo" class="hero__video" autoplay muted playsinline loop>
+      <source src="assets/handshake.mp4" type="video/mp4" />
+    </video>
+    <div id="logoOverlay" class="hero__logo"><img src="assets/dgs-logo.png" alt="DealGuard Secure" /></div>
+    <div class="hero__content">
+      <h1 data-bind="hero_title">Sicherheit für Ihren Unternehmensverkauf</h1>
+      <p data-bind="hero_subtitle">DealGuard Secure schützt Käufer & Verkäufer vor Risiken aus Garantien.</p>
+      <a href="#kontakt" class="btn" data-bind="hero_cta">Kostenlose Erstberatung</a>
+    </div>
+  </header>
+
+  <section id="kontakt">
+    <form name="dgs-kontakt" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="dgs-kontakt" />
+      <p><label>Name: <input type="text" name="name" required /></label></p>
+      <p><label>Email: <input type="email" name="email" required /></label></p>
+      <p><label>Nachricht: <textarea name="message"></textarea></label></p>
+      <p><button type="submit">Absenden</button></p>
+    </form>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
