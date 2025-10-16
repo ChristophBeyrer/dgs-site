@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DealGuard Secure (DGS) – Unternehmensverkauf absichern</title>
+  <meta name="description" content="DealGuard Secure (DGS): Transaktionsversicherung für Unternehmensverkäufe. Risiken ausschließen, sauberen Exit sichern. Infoprospekt herunterladen oder Beratung anfragen." />
+  <style>
+    :root{
+      --bg:#0b0d12;        /* Dunkles Navy */
+      --card:#11141a;      /* Card-Hintergrund */
+      --muted:#9aa3b2;     /* Sekundärtext */
+      --text:#eef3fb;      /* Primärtext */
+      --acc:#3ea1ff;       /* Akzent */
+      --acc2:#7ddc6f;      /* Zweit-Akzent */
+      --danger:#ff6b6b;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.5}
+    a{color:var(--acc);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;display:block}
+
+    /* Layout */
+    .container{width:min(1200px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(11,13,18,.9), rgba(11,13,18,.6));backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border:2px dashed rgba(255,255,255,.25);border-radius:10px;display:grid;place-items:center;font-weight:700;color:var(--muted)}
+    .brand h1{font-size:18px;margin:0}
+    .brand small{display:block;color:var(--muted);font-weight:500;margin-top:2px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{padding:8px 12px;border-radius:10px}
+    nav a:hover{background:rgba(255,255,255,.06)}
+    .cta{background:linear-gradient(90deg,var(--acc),#6ec4ff);color:#051424;padding:10px 16px;border-radius:999px;font-weight:700;box-shadow:var(--shadow)}
+    .cta:hover{filter:brightness(1.05)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate;padding:72px 0 40px;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:-10%;background:radial-gradient(1200px 600px at 70% -10%, rgba(62,161,255,.25), transparent 60%), radial-gradient(900px 500px at -10% 20%, rgba(125,220,111,.20), transparent 60%);z-index:-1}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+    .hero h2{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:0 0 10px}
+    .hero p.lead{font-size:clamp(16px,2.2vw,20px);color:var(--muted);margin:0 0 22px}
+    .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.12);padding:12px 16px;border-radius:12px}
+    .btn.primary{background:linear-gradient(90deg,var(--acc),#6ec4ff);color:#051424;border:none;font-weight:700}
+    .btn.secondary{background:#141821}
+
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+
+    /* Sections */
+    section{padding:56px 0}
+    h3.section-title{font-size:26px;margin:0 0 14px}
+    p.section-kicker{color:var(--muted);margin-top:0}
+
+    .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .cols.two{grid-template-columns:repeat(2,1fr)}
+
+    .step{display:flex;gap:14px}
+    .step .num{min-width:34px;height:34px;border-radius:999px;display:grid;place-items:center;background:rgba(62,161,255,.15);color:#cfe7ff;font-weight:800}
+
+    /* Forms */
+    form{display:grid;gap:12px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{font-size:14px;color:var(--muted)}
+    input, textarea{width:100%;padding:12px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#0d1117;color:var(--text)}
+    textarea{min-height:120px;resize:vertical}
+    .hint{font-size:12px;color:var(--muted)}
+
+    /* Trust */
+    .badges{display:flex;flex-wrap:wrap;gap:10px}
+    .badge{padding:8px 10px;border:1px solid rgba(255,255,255,.12);border-radius:999px;color:var(--muted);background:#0d1117}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding:28px 0;color:var(--muted)}
+    .footer-links{display:flex;gap:18px;flex-wrap:wrap}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .grid,.cols.two{grid-template-columns:1fr}
+      .cols{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-label="Logo Platzhalter">DGS</div>
+        <div>
+          <h1>DealGuard Secure</h1>
+          <small>Unternehmensverkauf absichern. Risiken ausschließen.</small>
+        </div>
+      </div>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="#vorteile">Vorteile</a></li>
+          <li><a href="#ablauf">Ablauf</a></li>
+          <li><a href="#prospekt" class="cta">Prospekt</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container grid">
+        <div>
+          <h2>Transaktionsversicherung für einen sauberen Exit & sicheren Erwerb</h2>
+          <p class="lead">DealGuard Secure (DGS) schützt Käufer und Verkäufer vor finanziellen Risiken nach dem Closing – von steuerlichen Nachforderungen bis zu verdeckten Verbindlichkeiten.</p>
+          <div class="actions">
+            <a class="btn primary" href="#prospekt">Kostenlosen Infoprospekt anfordern</a>
+            <a class="btn secondary" href="#kontakt">Beratungsgespräch anfragen</a>
+          </div>
+          <p class="hint">✅ DSGVO-konform · 🔒 Vertraulich · ⏱️ Schneller Prozess</p>
+        </div>
+        <div class="card">
+          <h3 class="section-title">Kurz erklärt</h3>
+          <p class="section-kicker">Warum DGS?</p>
+          <ul>
+            <li>Absicherung typischer Risiken (z. B. Steuer, Gewährleistung, Verbindlichkeiten)</li>
+            <li>Bessere Verhandlungsposition & schnellere Einigung</li>
+            <li>Planbare Haftung – auch bei unbekannten Risiken</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM & LÖSUNG / VORTEILE -->
+    <section id="vorteile">
+      <div class="container">
+        <h3 class="section-title">Risiken minimieren – Wert sichern</h3>
+        <p class="section-kicker">Typische Problemfelder beim Unternehmensverkauf – und wie DGS hilft</p>
+        <div class="cols two">
+          <div class="card">
+            <h4>Problemfelder</h4>
+            <ul>
+              <li>Steuerliche Nachforderungen nach Betriebsprüfung</li>
+              <li>Verdeckte Verbindlichkeiten, z. B. Lieferantenforderungen</li>
+              <li>Garantie-/Gewährleistungsverletzungen</li>
+              <li>Unbekannte Risiken trotz Due Diligence</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Lösung durch DGS</h4>
+            <ul>
+              <li>Versicherungslösungen, die spezifisch zum Deal passen</li>
+              <li>Abdeckung definierter Risiken & unbekannter Restunsicherheiten</li>
+              <li>Stärkung der Verhandlungsposition für beide Seiten</li>
+              <li>Beschleunigte Transaktion dank klarer Haftungsregelungen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABLAUF IN 3 SCHRITTEN -->
+    <section id="ablauf">
+      <div class="container">
+        <h3 class="section-title">So funktioniert DGS – in 3 Schritten</h3>
+        <div class="cols">
+          <div class="card step">
+            <div class="num">1</div>
+            <div>
+              <h4>Anfrage stellen</h4>
+              <p>Kurzes Formular ausfüllen oder anrufen. Wir prüfen Deal-Parameter (Kaufpreis, Branche, Risiko-Highlights).</p>
+            </div>
+          </div>
+          <div class="card step">
+            <div class="num">2</div>
+            <div>
+              <h4>Risikoanalyse</h4>
+              <p>Individuelle Bewertung gemeinsam mit unserem Partnernetzwerk (Juristen, Steuerexperten, Versicherer).</p>
+            </div>
+          </div>
+          <div class="card step">
+            <div class="num">3</div>
+            <div>
+              <h4>Abschluss</h4>
+              <p>Passende Police auswählen, Konditionen festlegen, Abschluss & Begleitung bis zum Closing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROSPEKT / LEAD MAGNET -->
+    <section id="prospekt">
+      <div class="container">
+        <div class="card">
+          <h3 class="section-title">Kostenlosen Infoprospekt anfordern</h3>
+          <p class="section-kicker">Kurz & prägnant: Leistungen, Ablauf, Checkliste für Verkäufer/Käufer</p>
+          <form onsubmit="return handleProspekt(event)">
+            <div class="row">
+              <div>
+                <label for="pname">Name*</label>
+                <input id="pname" name="name" required placeholder="Max Mustermann" />
+              </div>
+              <div>
+                <label for="pemail">E‑Mail*</label>
+                <input id="pemail" name="email" type="email" required placeholder="name@firma.de" />
+              </div>
+            </div>
+            <label class="hint"><input type="checkbox" id="pconsent" required /> Ich bin einverstanden, dass DGS mich per E‑Mail kontaktiert (DSGVO‑Hinweis).</label>
+            <button class="btn primary" type="submit">Prospekt senden</button>
+            <p class="hint" id="pmsg" role="status" aria-live="polite"></p>
+            <!-- HINWEIS: Hier später E-Mail-Automation / Download-Link integrieren -->
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+      <div class="container">
+        <div class="card">
+          <h3 class="section-title">Kontakt aufnehmen</h3>
+          <form onsubmit="return handleKontakt(event)">
+            <div class="row">
+              <div>
+                <label for="kname">Name*</label>
+                <input id="kname" name="name" required />
+              </div>
+              <div>
+                <label for="kmail">E‑Mail*</label>
+                <input id="kmail" name="email" type="email" required />
+              </div>
+            </div>
+            <label for="knachricht">Nachricht</label>
+            <textarea id="knachricht" name="message" placeholder="Kurz Ihr Anliegen oder Rückrufwunsch…"></textarea>
+            <button class="btn primary" type="submit">Nachricht senden</button>
+            <p class="hint" id="kmsg" role="status" aria-live="polite"></p>
+            <!-- HINWEIS: Backend/Form‑Service (z. B. Formspree, Netlify Forms, Brevo) anbinden -->
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERTRAUEN / COMPLIANCE -->
+    <section>
+      <div class="container">
+        <h3 class="section-title">Vertrauen & Compliance</h3>
+        <div class="badges">
+          <span class="badge">§34d Versicherungsvermittlung</span>
+          <span class="badge">IHK München/Oberbayern</span>
+          <span class="badge">Datenschutz: DSGVO</span>
+          <span class="badge">Vertraulichkeit garantiert</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <small>© <span id="year"></span> DealGuard Secure (DGS). Alle Rechte vorbehalten.</small>
+      <div class="footer-links">
+        <a href="#" aria-label="Impressum (später verlinken)">Impressum</a>
+        <a href="#" aria-label="Datenschutzerklärung (später verlinken)">Datenschutzerklärung</a>
+        <a href="#top" aria-label="Nach oben springen">Nach oben ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Jahreszahl
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Dummy‑Handlers für Demo
+    function handleProspekt(e){
+      e.preventDefault();
+      const name = document.getElementById('pname').value.trim();
+      const email = document.getElementById('pemail').value.trim();
+      const consent = document.getElementById('pconsent').checked;
+      const msg = document.getElementById('pmsg');
+      if(!name || !email || !consent){
+        msg.textContent = 'Bitte füllen Sie alle Pflichtfelder aus.';
+        msg.style.color = 'var(--danger)';
+        return false;
+      }
+      // TODO: Hier Prospekt-Versand / Download-Link integrieren
+      msg.textContent = 'Vielen Dank! Wir senden Ihnen den Prospekt in Kürze zu.';
+      msg.style.color = 'var(--acc2)';
+      e.target.reset();
+      return false;
+    }
+
+    function handleKontakt(e){
+      e.preventDefault();
+      const name = document.getElementById('kname').value.trim();
+      const email = document.getElementById('kmail').value.trim();
+      const msg = document.getElementById('kmsg');
+      if(!name || !email){
+        msg.textContent = 'Bitte füllen Sie Name und E‑Mail aus.';
+        msg.style.color = 'var(--danger)';
+        return false;
+      }
+      // TODO: Backend/Service integrieren
+      msg.textContent = 'Danke! Wir melden uns zeitnah bei Ihnen.';
+      msg.style.color = 'var(--acc2)';
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
