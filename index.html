@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero" data-content-source="content/site.json">
-    <video id="bgVideo" class="hero__video" autoplay muted playsinline loop>
-      <source src="assets/handshake.mp4" type="video/mp4" />
-    </video>
+ <!-- Hero (nur Text, ohne Bild) -->
+<section class="hero hero--text">
+  <div class="hero__content">
+    <h1>Sicherheit für Ihren Unternehmensverkauf</h1>
+    <p>DealGuard Secure schützt Käufer & Verkäufer vor Risiken aus Garantien (Reps & Warranties) – klar, schnell, professionell.</p>
+    <a href="#kontakt" class="cta-button">Kostenlose Erstberatung</a>
+  </div>
+</section>
     <div id="logoOverlay" class="hero__logo"><img src="assets/dgs-logo.png" alt="DealGuard Secure" /></div>
     <div class="hero__content">
       <h1 data-bind="hero_title">Sicherheit für Ihren Unternehmensverkauf</h1>
@@ -18,7 +22,15 @@
       <a href="#kontakt" class="btn" data-bind="hero_cta">Kostenlose Erstberatung</a>
     </div>
   </header>
-
+<!-- Visualisierung: Bild als unterstützendes Element (nicht fullscreen) -->
+<section class="deal-visual container">
+  <div class="deal-visual__img" role="img"
+       aria-label="Zwei Unternehmer geben sich die Hand über einem Unternehmenskaufvertrag.">
+  </div>
+  <p class="deal-visual__caption">
+    Visuelle Darstellung eines abgeschlossenen Deals – abgesichert durch DealGuard Secure.
+  </p>
+</section>
   <section id="kontakt">
     <form name="dgs-kontakt" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="dgs-kontakt" />
